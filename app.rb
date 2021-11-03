@@ -17,7 +17,5 @@ get '/derpy' do
 end
 
 get '/cat' do
-    "<div style='border: 3px dashed red'>
-    <img src= 'https://imgur.com/jFaSxym.png'>
-    </div>"
+    erb(:index)
 end    
