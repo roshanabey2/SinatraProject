@@ -1,3 +1,16 @@
-"<div style='border: 3px dashed red'>
+<% if @name == nil %>
+<form>
+<input type="text" name="name">
+<input type="Submit" value="Submit">
+<div style='border: 3px dashed red'>
     <img src= 'https://imgur.com/jFaSxym.png'>
-</div>"
+</div>
+ </form>
+ <% else %>
+ <input type="text" name="name">
+<input type="Submit" value="Submit">
+<h1> My name is <%= @name %> </h1>
+<div style='border: 3px dashed red'>
+    <img src= 'https://imgur.com/jFaSxym.png'>
+</div>
+<% end %>

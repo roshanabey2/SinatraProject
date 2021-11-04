@@ -16,6 +16,12 @@ get '/derpy' do
     "I ate chocolate today"
 end
 
-get '/cat' do
+get '/random-cat' do
+    p params
+    @name = params[:name]
     erb(:index)
-end    
+end
+
+get '/named-cat' do
+    erb(:cat)
+end
