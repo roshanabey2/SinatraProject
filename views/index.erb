@@ -1,16 +1,10 @@
-<% if @name == nil %>
+<% if @name %>
+<h1> My name is <%= @name %> </h1>
+<% end %>
 <form>
 <input type="text" name="name">
 <input type="Submit" value="Submit">
+</form>
 <div style='border: 3px dashed red'>
-    <img src= 'https://imgur.com/jFaSxym.png'>
+<img src= 'https://imgur.com/jFaSxym.png'>
 </div>
- </form>
- <% else %>
- <input type="text" name="name">
-<input type="Submit" value="Submit">
-<h1> My name is <%= @name %> </h1>
-<div style='border: 3px dashed red'>
-    <img src= 'https://imgur.com/jFaSxym.png'>
-</div>
-<% end %>
